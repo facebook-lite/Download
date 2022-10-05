@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- saved from url=(0189)https://aax.softonic.com/display.html?_otarOg=https%3A%2F%2Ffacebook-lite.softonic.vn&_cpub=AAXXX4L07&_csvr=100510_457&_cgdpr=0&_cgdprconsent=1&_cusp_status=0&_ccoppa=0&_ositekey_disabled=1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script>
+
+        function fireErrorLog(logId) {
+            let errorLog = "";
+            const logToFire = errorLog + logId;
+            if (window.name !== '') {
+                try {
+                    var iframeParams = JSON.parse(window.name);
+                    if (!isPrefetchIframe(iframeParams.type) && errorLog.indexOf("AAXUJ5L2F") > -1) {
+                        (new Image()).src = logToFire;
+                    }
+                } catch (e) {
+                    (new Image()).src = "https://l3.aaxads.com/log?___stu13p=1j1i1g49bxe3odqe1gncqvgbtbu1qf26wycb&lwbsh=AAX&oyo=1&qdph=PCH_DISPLAY_ERROR";
+                }
+            }
+        }
+
+        function isDisplayIframe(type) {
+            return type;
+        }
+
+        function isPrefetchIframe(type) {
+            return type === "prefetch_frame";
+        }
+
+        function buildDisplayUrl(srcUrl, type) {
+            srcUrl = srcUrl + "&type=" + type;
+            if (isPrefetchIframe(type)) {
+                srcUrl = "";
+            }
+            return srcUrl;
+        }
+
+        function getScriptUrl(srcUrl) {
+            if (window.name !== '') {
+                try {
+                    var iframeParams = JSON.parse(window.name);
+                    if (isDisplayIframe(iframeParams.type)) {
+                        srcUrl = buildDisplayUrl(srcUrl, iframeParams.type);
+                    }
+                } catch (e) {
+                }
+            }
+            return srcUrl;
+        }
+
+        function loadScript(scriptUrl) {
+            if (scriptUrl === "") {
+                return;
+            }
+            var script = document.createElement("script");
+            script.type = "text/javascript";
+            script.src = scriptUrl;
+            var placeTag = document.getElementsByTagName("script")[0];
+            placeTag.parentNode.insertBefore(script, placeTag);
+            script.onerror = (event) => {
+                window.console.log(event);
+                fireErrorLog("_3");
+            };
+        }
+
+        window.aax = window.aax || {};
+        fireErrorLog("_1");
+        window.aax["__conf"] = {"tarOg":"https://facebook-lite.softonic.vn","sitekey_disabled":"1","referer":"https://facebook-lite.softonic.vn/"};
+        scriptUrl = getScriptUrl("https://c.aaxads.com/aaxd.js?pub=AAXXX4L07&svr=100510_457&gdpr=0&gdprconsent=1&usp_status=0&coppa=0");
+        loadScript(scriptUrl);
+        fireErrorLog("_2");
+    </script>
+<style></style><style>@font-face {
+              font-family: 'Open Sans Regular';
+              font-style: normal;
+              font-weight: 400;
+              src: url('chrome-extension://gkkdmjjodidppndkbkhhknakbeflbomf/fonts/open_sans/open-sans-v18-latin-regular.woff');
+          }</style><style>@font-face {
+              font-family: 'Open Sans Bold';
+              font-style: normal;
+              font-weight: 800;
+              src: url('chrome-extension://gkkdmjjodidppndkbkhhknakbeflbomf/fonts/open_sans/open-sans-v18-latin-800.woff');
+          }</style></head>
+<body marginwidth="0" marginheight="0">
+
+</body></html>
